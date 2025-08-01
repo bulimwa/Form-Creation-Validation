@@ -1,3 +1,4 @@
+/* Base page styling */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -8,6 +9,7 @@ body {
     margin: 0;
 }
 
+/* Form container */
 form {
     background: #ffffff;
     padding: 20px;
@@ -17,22 +19,25 @@ form {
     max-width: 400px;
 }
 
+/* Labels */
 label {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
-    display: block;
 }
 
+/* Input fields */
 input {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: calc(100% - 22px);
+    width: 100%;
     box-sizing: border-box;
 }
 
+/* Submit button */
 button {
     background-color: #007bff;
     color: white;
@@ -50,16 +55,13 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Feedback message container */
 #form-feedback {
     margin-top: 10px;
     padding: 10px;
-    color: #d8000c;
-    background-color: #ffbaba;
     border-radius: 4px;
-    display: none;
+    display: none; /* Hidden by default, shown on validation result */
+    background-color: #ffbaba;
+    color: #d8000c;
 }
 
-#form-feedback.success {
-    color: #28a745;
-    background-color: #d4edda;
-}
